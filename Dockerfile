@@ -29,4 +29,4 @@ EXPOSE 8090
 
 WORKDIR /install/open-zwave-control-panel
 
-ENTRYPOINT ["./ozwcp"]
+ENTRYPOINT ["./ozwcp | grep "Power" >> /home/linus/power.log"]
